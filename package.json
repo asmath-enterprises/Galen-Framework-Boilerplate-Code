@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "galen:browserstack": "galen test tests/visual/browserstack.test.js --htmlreport reports/BrowserstackReport  -Dbrowserstack.key=52uBC2xxvd3gZhfpFEsx -Dbrowserstack.username=dineshm4",
+    "test": "galen test tests/homepage.test.js --htmlreport reports",
+    "test:browserstack": "npm run galen:browserstack"
+  }
+}

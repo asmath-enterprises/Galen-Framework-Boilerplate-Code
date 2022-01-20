@@ -1,0 +1,11 @@
+@objects
+    HeaderBanner    .tg_header_banner 
+
+= Main section =
+    @on mobile
+        HeaderBanner:
+            height 200px
+
+    @on desktop
+        HeaderBanner:
+            height 200px
