@@ -1,6 +1,7 @@
 // A Galen-JavaScript test to execute a spec against multiple configurations
 
 // Configurations for running the tests
+//A list of all capabilities to check https://www.browserstack.com/automate/capabilities
 this.devices = {
   win8: {
     tag: "desktop",
