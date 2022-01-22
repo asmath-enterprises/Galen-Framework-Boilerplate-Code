@@ -47,3 +47,12 @@ npm run test:browserstack
 ```
 
 You will find the reports folder created and you can check the report by open "Report.html"
+
+firefox driver download
+https://github.com/mozilla/geckodriver/releases
+
+chrome driver download
+https://chromedriver.chromium.org/downloads
+
+Galen framework Docker image on docker hub
+https://hub.docker.com/r/drginm/galen-cli/

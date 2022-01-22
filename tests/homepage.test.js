@@ -8,7 +8,7 @@ forAll(devices, function () {
 		test('Test on ${browserName} on ${deviceName}', function (device, browser) {
 			// Instantiating the WebDriver
 			var driver = createDriver(
-				'https://tg.billionapps.net/cll-new-2021/',
+				domain,
 				device.size,
 				browser.browserName
 			)
@@ -17,7 +17,7 @@ forAll(devices, function () {
 			logged('Login Page', function () {
 				loginPage = new LoginPage(driver)
 				loginPage.waitForIt()
-				loginPage.loginAs('SwVt9o$mzXDjWOCDsHNBOCLx')
+				loginPage.loginAs(TEST_USER.password)
 				// Checking layout on the page
 				checkLayout(driver, 'tests/specs/homepage.gspec', device.deviceName)
 			})
