@@ -3,6 +3,12 @@
     "galen:browserstack": "galen test tests/visual/browserstack.test.js --htmlreport reports/BrowserstackReport  -Dbrowserstack.key=52uBC2xxvd3gZhfpFEsx -Dbrowserstack.username=dineshm4",
     "test": "galen test tests/homepage.test.js --htmlreport reports",
     "test:browserstack": "npm run galen:browserstack",
-    "test:parallel": "galen test tests/ --recursive --parallel-tests 3 --htmlreport reports"
+    "test:parallel": "galen test tests/ --recursive --parallel-tests 3 --htmlreport reports",
+    "posttest:test": "opener reports/report.html",
+    "posttest:browserstack": "opener reports/BrowserstackReport/report.html"
+  },
+  "devDependencies": {
+    "opener": "^1.5.2",
+    "prettier": "^2.5.1"
   }
 }
