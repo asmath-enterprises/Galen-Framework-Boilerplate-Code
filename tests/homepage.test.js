@@ -7,11 +7,7 @@ forAll(devices, function () {
 	forAll(browsers, function () {
 		test('Test on ${browserName} on ${deviceName}', function (device, browser) {
 			// Instantiating the WebDriver
-			var driver = createDriver(
-				domain,
-				device.size,
-				browser.browserName
-			)
+			var driver = createDriver(test_app_url, device.size, browser.browserName)
 			//Test code
 			var loginPage = null
 			logged('Login Page', function () {

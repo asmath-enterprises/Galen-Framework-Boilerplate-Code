@@ -54,5 +54,8 @@ https://github.com/mozilla/geckodriver/releases
 chrome driver download
 https://chromedriver.chromium.org/downloads
 
+edge driver download
+https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
 Galen framework Docker image on docker hub
 https://hub.docker.com/r/drginm/galen-cli/

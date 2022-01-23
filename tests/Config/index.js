@@ -1,17 +1,24 @@
 //	Domain	URL
-var domain = "https://tg.billionapps.net/cll-new-2021/";
+var test_app_url = "https://tg.billionapps.net/cll-new-2021/";
 
 // A list of all devices and browsers that will be used in our tests
 // ****	START **** //
 var devices = {
-	tablet: {
-		deviceName: 'mobile',
-		size: '500x700',
-	},
-	desktop: {
-		deviceName: 'desktop',
-		size: '1366x768',
-	},
+	 mobile:{
+        deviceName: "mobile",
+        size: "360x640",
+        tags: ["mobile"]
+    },
+    tablet:{
+        deviceName: "tablet",
+        size: "600x800",
+        tags: ["tablet"]
+    },
+    desktop:{
+        deviceName: "desktop",
+        size: "1900x1080",
+        tags: ["desktop"]
+    }
 }
 
 var browsers = {
@@ -20,6 +27,9 @@ var browsers = {
 	},
 	chrome: {
 		browserName: 'chrome',
+	},
+	edge: {
+		browserName: 'edge',
 	}
 }
 // ****	END **** //
@@ -36,5 +46,5 @@ var TEST_USER = {
     export.devices = devices;
 	export.browsers = browsers
     export.TEST_USER = TEST_USER;
-	export.domain = domain
+	export.test_app_url = test_app_url
 })(this);
