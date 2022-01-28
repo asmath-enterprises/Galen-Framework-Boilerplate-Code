@@ -1,0 +1,7 @@
+@objects
+    welcome-block       css     .jumbotron
+    header-text         css     #header h1
+    header-logo         css     #header-logo
+    greeting            css     #welcome-page h1
+    text-block-*        css     #welcome-page p
+    login-btn           xpath   //div[@id="welcome-page"]/p/button

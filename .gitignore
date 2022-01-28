@@ -1,2 +1,4 @@
 reports
 node_modules
+.vscode
+spec-generate-dump

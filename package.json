@@ -1,11 +1,14 @@
 {
   "scripts": {
     "galen:browserstack": "galen test tests/visual/browserstack.test.js --htmlreport reports/BrowserstackReport  -Dbrowserstack.key=52uBC2xxvd3gZhfpFEsx -Dbrowserstack.username=dineshm4",
-    "test": "galen test tests/homepage.test.js --htmlreport reports",
+    "test": "npm run e2e && npm run posttest:test",
+    "e2e": "galen test tests/homepage.test.js --htmlreport reports",
     "test:browserstack": "npm run galen:browserstack",
-    "test:parallel": "galen test tests/ --recursive --parallel-tests 4 --htmlreport reports",
+    "test:parallel": "galen test tests/homepage.test.js --recursive --parallel-tests 4 --htmlreport reports",
     "posttest:test": "opener reports/report.html",
-    "posttest:browserstack": "opener reports/BrowserstackReport/report.html"
+    "posttest:browserstack": "opener reports/BrowserstackReport/report.html",
+    "spec-dump": "galen dump tests/spec-generate/homepage.gspec --url http://testapp.galenframework.com/ -Dwebdriver.chrome.driver=drivers/chromedriver.exe --size 1024x768 --export spec-generate-dump",
+    "spec-export": "galen generate homepage-dump/page.json --export result.gspec --no-galen-extras"
   },
   "devDependencies": {
     "opener": "^1.5.2",
